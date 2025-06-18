@@ -1,0 +1,54 @@
+header {
+    margin: -150px -10px;
+    padding: 20px 1500px 20px 20px;
+    background-color: rgb(253, 164, 30);
+    position: fixed;
+}
+aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 200px;
+    z-index: 2;
+}
+nav {
+    display: flex;
+    margin-top: 150px;
+}
+#logo {
+    position: absolute;
+    max-width: 100px;
+    max-width: 100px;
+    background: transparent;
+    animation: batida 1s infinite;
+}
+@keyframes batida {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.1) ;
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1) ;
+    }
+    90% {
+        transform: scale(1);
+    }
+}
+#menu {
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 1200px;
+}
+#pesquisa {
+    width: 350px;
+    height: 25px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
