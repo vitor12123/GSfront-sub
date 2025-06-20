@@ -1,8 +1,13 @@
+
+body{
+    overflow-x: hidden;
+}
 header {
     margin: -150px -10px;
     padding: 20px 1500px 20px 20px;
-    background-color: rgb(253, 164, 30);
+    background-color: rgb(156, 253, 0);
     position: fixed;
+    z-index: 3;
 }
 aside{
     position: absolute;
@@ -15,6 +20,28 @@ nav {
     display: flex;
     margin-top: 150px;
 }
+ul {
+    list-style: none;
+    display: flex;
+    margin: 100px 0px 70px 500px;
+}
+li {
+    color: black;
+    margin-right: 50px;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    background-color: rgb(156, 253, 0);
+    margin-top: 50px;
+    padding: 0px 1500px 20px 470px;
+    margin: 20px 0px -20px -20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
 #logo {
     position: absolute;
     max-width: 100px;
@@ -51,4 +78,72 @@ nav {
     height: 25px;
     border-radius: 20px;
     padding-left: 10px;
+    margin-left: -1160px;
+}
+#pesquisaLogo {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin:3px 800px;
+}
+#tituloPromo {
+    margin: 50px 0px 30px 75px;
+}
+.vendaLivro{
+    margin: 30px 0px 0px 30px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    width: 260px;
+    height: 450px;
+    display: inline-block;
+}
+.vendaLivro:hover {
+    cursor: pointer;
+    transition: 2s;
+    transform: scale(1.05);
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.8);
+}
+.vendaLivro:active {
+    transition: 1.5s;
+    transform: scale(0.93);
+}
+.livro {
+    padding-left: 25px;
+    width: 200px;
+    height: 250px;
+}
+.precoAlto {
+    text-decoration: line-through;
+}
+#secaoPrincipal {
+    margin: 75px 0px 35px 75px;
+}
+#contats {
+    margin: 18px 0px 0px 180px;
+}
+.contato {
+    color: blue;
+    white-space: nowrap; 
+    display: block;
+}
+.contato:hover {
+    color: rgb(87, 0, 87);
+}
+.contato:active {
+    transition: 2s;
+    transform: scale(0.93);
+}
+.redeSocial {
+    margin-right: -50px;
+    margin-left: 100px;
+}
+#setaPagina{
+    cursor: pointer; 
+    width: 18px;
+}
+#setaPagina:active {
+    transition: 1s;
+    transform: scale(0.90);
 }
