@@ -4,17 +4,16 @@ const pagina = document.getElementById('setaPagina')
 const numpag = document.getElementsByClassName('pag')
 const tituloPromo = document.getElementById('a')
 const secaoPrincipal = document.getElementById('b')
-const pagina1 = document.getElementById('1')
-const pagina2 = document.getElementById('2')
-const pagina3 = document.getElementById('3')
-const pagina4 = document.getElementById('4')
-const pagina5 = document.getElementById('5')
+let contador2 = 0;
 const passaPagina = document.getElementById('passaPagina')
+const divPaginas = document.getElementById('div')
 let menuAberto = document.createElement('div')
-
+   let contaesp = 0
+   let contaesp2 = 760
+   let marginTop = -105
 divHBG.style.left = '1500px'
 divHBG.style.transition = '2.5s'
-menu.style.marginLeft = '1200px'
+menu.style.marginLeft = '1200px'   
 
 let contador = 1
 
@@ -23,7 +22,7 @@ function abrir() {
         contador++
         if (contador % 2 == 0) { 
             menu.style.transition = '1.5s'
-            menu.style.marginLeft = '1060px'
+            menu.style.marginLeft = '1100px'
             menuAberto.innerHTML = `
             <h2>menu</h2>
 
@@ -66,7 +65,7 @@ function menuNavegacao() {
         promo.addEventListener('click', (event) => {
         event.preventDefault();
         tituloPromo.scrollIntoView({
-            behavior:'smooth',
+            behavior:'smooth'
             });
         });
     popular.addEventListener('click', (event) => {
@@ -82,15 +81,4 @@ function menuNavegacao() {
             });
         });
     }
-    
-let contador2 = 0 
 
-function paginas() {
-    pagina.addEventListener('click', () => {
-        contador2++ 
-        if (contador2 >= 1) {
-            pagina1.style.position = 'relative'
-            pagina1.style.marginRight = '1000px'
-        }
-    })
-}

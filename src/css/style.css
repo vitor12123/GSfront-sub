@@ -3,7 +3,7 @@ body{
     overflow-x: hidden;
 }
 header {
-    margin: -150px -10px;
+    margin: -170px -10px;
     padding: 20px 1500px 20px 20px;
     background-color: rgb(156, 253, 0);
     position: fixed;
@@ -41,11 +41,14 @@ footer {
     justify-content: center;
     gap: 50px;
 }
+section {
+    margin-left: 10px;
+}
 
 #logo {
     position: absolute;
-    max-width: 100px;
-    max-width: 100px;
+    max-width: 60px;
+    max-width: 60px;
     background: transparent;
     animation: batida 1s infinite;
 }
@@ -67,27 +70,31 @@ footer {
     }
 }
 #menu {
-    width: 85px;
-    height: 85px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
     margin-left: 1200px;
+    margin-top: -40px;
 }
 #pesquisa {
     width: 350px;
     height: 25px;
     border-radius: 20px;
     padding-left: 10px;
-    margin-left: -1160px;
+    margin-left: 465px;
 }
 #pesquisaLogo {
     position: relative;
     width: 25px;
     height: 25px;
-    margin:3px 800px;
+    margin:-32px 800px;
+}
+#pesquisaForm {
+    z-index: 8;
 }
 #tituloPromo {
-    margin: 50px 0px 30px 75px;
+    margin: 170px 0px 30px 75px;
 }
 .vendaLivro{
     margin: 30px 0px 0px 30px;
@@ -138,12 +145,4 @@ footer {
 .redeSocial {
     margin-right: -50px;
     margin-left: 100px;
-}
-#setaPagina{
-    cursor: pointer; 
-    width: 18px;
-}
-#setaPagina:active {
-    transition: 1s;
-    transform: scale(0.90);
 }
